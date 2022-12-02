@@ -45,29 +45,24 @@
       </nav>
     </header>
 
-    <main class="container mt-2">
+    <main class="container-fluid mt-2">
       <h1>Intro a SVG</h1>
-      <div id="graf">
-        <svg width="640px" height="480px" class="fig">
-          <circle
-            cx="320"
-            cy="240"
-            r="120"
-            fill="#f72585"
-            stroke="#4361ee"
-            stroke-width="5"
-          />
-          <rect x="160" y="120" height="100" width="200" fill="#03045e55" />
-          <line
-            x1="0"
-            y1="480"
-            x2="640"
-            y2="0"
-            stroke="#d62828"
-            stroke-width="5"
-          />
-        </svg>
-      </div>
+      <div id="graf"></div>
+      <section class="mt-2 d-flex justify-content-center gap-1">
+        <button onclick="mover(-50, 0)" class="btn btn-primary">Izq</button>
+        <button onclick="mover(0, -50)" class="btn btn-primary">Arr</button>
+        <button onclick="mover(0, 50)" class="btn btn-primary">Aba</button>
+        <button onclick="mover(50, 0)" class="btn btn-primary">Der</button>
+      </section>
+      <section class="mt-2 d-flex justify-content-center gap-1">
+        <button onclick="color('#88ff88')" class="btn btn-success">
+          verde
+        </button>
+        <button onclick="color('#ffff88')" class="btn btn-warning">
+          amarillo
+        </button>
+        <button onclick="color('#ff8888')" class="btn btn-danger">rojo</button>
+      </section>
     </main>
 
     <script
