@@ -2,3 +2,23 @@
   background-color: #ccc;
   border: 1px solid #777;
 }
+
+.bg {
+  fill: #ffffff88;
+}
+
+.axis {
+  font-size: 40px;
+  font-family: "Fira Code";
+}
+
+.axis line {
+  stroke-width: 2;
+  stroke: #ccc;
+  stroke-dasharray: 10 5;
+}
+
+.titulo {
+  font-size: 75px;
+  font-family: "Fira Code";
+}
