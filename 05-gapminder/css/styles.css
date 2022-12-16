@@ -29,3 +29,12 @@
   font-size: 20px;
   font-family: "Fira Code";
 }
+
+.year {
+  font-size: 450px;
+  font-family: "Fira Code";
+  font-weight: bold;
+  fill: #bbb;
+  text-anchor: middle;
+  dominant-baseline: middle;
+}
