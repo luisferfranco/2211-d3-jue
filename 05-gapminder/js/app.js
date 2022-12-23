@@ -64,7 +64,7 @@ const load = async () => {
 
   miny = d3.min(data, (d) => d.year)
   maxy = d3.max(data, (d) => d.year)
-  iy = 2000
+  iy = miny
 
   g.append("g")
     .attr("transform", `translate(0, ${alto})`)
