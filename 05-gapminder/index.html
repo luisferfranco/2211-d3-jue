@@ -47,11 +47,31 @@
         <button onclick="delta(-1)" class="btn btn-info">
           <i class="fas fa-caret-left fa-2x"></i>
         </button>
+        <button
+          onclick="toggleAnimacion()"
+          class="btn btn-success"
+          id="btnAnimacion"
+        >
+          <i class="fas fa-play fa-2x"></i>
+        </button>
         <button onclick="delta(1)" class="btn btn-info">
           <i class="fas fa-caret-right fa-2x"></i>
         </button>
       </div>
-      <div id="graf"></div>
+      <div id="graf" style="position: relative">
+        <div
+          class="p-2 bg-danger text-warning rounded shadow-sm"
+          id="tooltip"
+          style="position: absolute; display: none"
+          onclick="hideTooltip()"
+        >
+          <p>
+            Country: <span id="country"><strong>xxxxx</strong></span>
+            <br />
+            Population: <span id="population"><strong>xxxxx</strong></span>
+          </p>
+        </div>
+      </div>
     </main>
 
     <script
